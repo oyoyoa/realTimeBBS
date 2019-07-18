@@ -14,11 +14,6 @@
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           {{ logined_user.name }}
-          {% if logined_user.icon %}
-          <img src="{{ logined_user.icon.url }}" width="40px">
-          {% else %}
-          <img src="/media/icon/default_icon/icon1.png" width="40px">
-          {% endif%}
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="{% url 'main:userpage' logined_user.id %}">ユーザーページ</a>

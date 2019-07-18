@@ -5,7 +5,7 @@ import django_heroku
 from .base import *
 
 
-DEBUG = True
+DEBUG = False
 ALLOWED_HOSTS = ['*']
 
 SECRET_KEY = '@(o)5pq(3(fj#^s_n!vik&e0o@+6ezbjpbf^8(gst@(f+z(rjb'

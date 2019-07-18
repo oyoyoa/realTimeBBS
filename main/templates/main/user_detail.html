@@ -3,11 +3,6 @@
 {% block content %}
 {% if logined_user %}
     <h1>プロフィール</h1>
-        {% if logined_user.icon %}
-            <img src="{{ logined_user.icon.url }}" style="height: 50px; width: 50px;">
-        {% else %}
-            <img src="/media/icon/default_icon/icon1.png" style="height: 50px; width: 50px;">
-        {% endif%}
     <p>{{ logined_user.name }}</p>
     <p>{{ logined_user.email }}</p>
     {% for address in logined_user.get_addresses %}

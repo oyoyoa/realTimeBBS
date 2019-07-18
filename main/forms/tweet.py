@@ -14,12 +14,11 @@ class TweetForm(BootstrapFormMixin, ModelForm):
     )
     class Meta:
         model = Tweet
-        fields = ['content', 'image']
+        fields = ['content']
 
     def __init__(self, user, instance=None, *args, **kwargs):
         super().__init__(instance=instance, *args, **kwargs)
         self.user = user
-        self.fields["image"].required = False
 
     def save(self, commit=True):
         self.instance.user = self.user

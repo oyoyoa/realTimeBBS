@@ -273,7 +273,3 @@ CORS_ORIGIN_WHITELIST = (
 
 # Compress
 COMPRESS_OFFLINE = True
-
-# print(BASE_DIR)
-# print(STATIC_ROOT)
-# # print(STATICFILES_DIRS)
