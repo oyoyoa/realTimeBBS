@@ -33,4 +33,3 @@ class TweetDeleteView(DeleteView):
         messages.success(
             self.request, 'ツイートを削除しました'.format(self.object))
         return result
-    

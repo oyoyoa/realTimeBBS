@@ -3,3 +3,4 @@ from .none import *
 from .token import *
 from .user import *
 from .uuid import *
+from .tweet import *
