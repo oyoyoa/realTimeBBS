@@ -1,0 +1,16 @@
+{% extends "main/base/base.html" %}
+
+{% block content %}
+<form method="post" class="form-signin">
+  <h1>ログインする</h1>
+  {% csrf_token %}
+  {% for field in form %}
+    {{ field }}
+    {% for error in field.errors %}
+      {{ error }}
+    {% endfor %}
+  {% endfor %}
+  <button type="submit" class="btn btn-pink300_rsd text-right my-1">ログイン</button>
+  <a href="{% url 'main:signup' %}" class="d-block">アカウントがない場合</a>
+</form>
+{% endblock content %}
